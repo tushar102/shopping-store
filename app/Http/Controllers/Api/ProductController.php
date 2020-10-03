@@ -10,7 +10,7 @@ class ProductController extends Controller
 {
     public function getAllProducts()
     {
-        $products = Product::with('image')->get()->toJson(JSON_PRETTY_PRINT);
+        $products = Product::with('image', 'variant')->get()->toJson(JSON_PRETTY_PRINT);
         return response($products, 200);
     }
 

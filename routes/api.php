@@ -23,3 +23,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
   Route::post('/product', 'Api\ProductController@store');
   Route::get('product/{id}','Api\ProductController@getProduct');
   Route::post('/product-image','Api\ProductImageController@uploadImage');
+  Route::post('/product-variant','Api\ProductVariantController@store');

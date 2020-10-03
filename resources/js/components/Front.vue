@@ -13,7 +13,8 @@
                         <h4 class="card-title">
                            <a href="#">{{ product.name }}</a>
                         </h4>
-                        <h5>$24.99</h5>
+                        <h5>{{ product.variant.price }}</h5>
+                        <router-link to="/product">Product</router-link>
                         <p class="card-text">{{ product.description }}</p>
                      </div>
                      <div class="card-footer">

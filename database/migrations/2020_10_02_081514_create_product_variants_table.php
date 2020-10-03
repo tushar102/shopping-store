@@ -17,6 +17,7 @@ class CreateProductVariantsTable extends Migration
             $table->id();
             $table->integer('product_id')->unsigned();
             $table->string('name')->nullable();
+            $table->string('price')->nullable();
             $table->timestamps();
         });
     }

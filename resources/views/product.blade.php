@@ -57,6 +57,7 @@
 
   <div id="app">
     <front-page></front-page>
+    <router-view></router-view>
   </div>
 
   <!-- Page Content -->
