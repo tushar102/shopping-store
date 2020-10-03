@@ -19,4 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-  Route::get('/product', 'Api\ProductController@getAllProducts');
+  Route::get('/products', 'Api\ProductController@getAllProducts');
+  Route::post('/product', 'Api\ProductController@store');
+  Route::get('product/{id}','Api\ProductController@getProduct');
+  Route::post('/product-image','Api\ProductImageController@uploadImage');

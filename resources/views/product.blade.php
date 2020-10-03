@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Shopping Store</title>
+  <title>Clothing Store</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,10 @@
   <link href="css/shop-homepage.css" rel="stylesheet">
   <link href="{{ asset('/css/shop-homepage.css') }}" rel="stylesheet">
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ asset('/js/jquery.min.js') }}"></script>
+  <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
+
 </head>
 
 <body>
@@ -26,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Shopping Store</a>
+      <a class="navbar-brand" href="#">Clothing Store</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,9 +71,9 @@
     <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{ asset('/js/jquery.min.js') }}"></script>
-  <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ mix('js/app.js') }}">
+
+  </script>
 
 </body>
 
