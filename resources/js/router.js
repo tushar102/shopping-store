@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   routes : [
-    { path:'/product',component: SingleProduct }
-  ]
+    { path:'/product',component: SingleProduct },
+  ],
+  mode: 'history'
 })

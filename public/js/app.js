@@ -1936,8 +1936,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Front",
   data: function data() {
@@ -1970,7 +1968,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -19631,56 +19628,61 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-12" }, [
-        _c(
-          "div",
-          { staticClass: "row" },
-          _vm._l(_vm.products, function(product) {
-            return _c("div", { staticClass: "col-lg-4 col-md-6 mb-4" }, [
-              _c("div", { staticClass: "card h-100" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    staticClass: "card-img-top",
-                    attrs: { src: product.image.image, alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "card-body" },
-                  [
-                    _c("h4", { staticClass: "card-title" }, [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v(_vm._s(product.name))
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-12" }, [
+          _c(
+            "div",
+            { staticClass: "row" },
+            _vm._l(_vm.products, function(product) {
+              return _c("div", { staticClass: "col-lg-4 col-md-6 mb-4" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: product.image.image, alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "card-body" },
+                    [
+                      _c("h4", { staticClass: "card-title" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v(_vm._s(product.name))
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("h5", [_vm._v(_vm._s(product.variant.price))]),
+                      _vm._v(" "),
+                      _c("router-link", { attrs: { to: "/product" } }, [
+                        _vm._v("Product")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text" }, [
+                        _vm._v(_vm._s(product.description))
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("h5", [_vm._v(_vm._s(product.variant.price))]),
-                    _vm._v(" "),
-                    _c("router-link", { attrs: { to: "/product" } }, [
-                      _vm._v("Product")
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "card-text" }, [
-                      _vm._v(_vm._s(product.description))
-                    ])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _vm._m(1, true)
+                    ],
+                    1
+                  )
+                ])
               ])
-            ])
-          }),
-          0
-        )
-      ])
-    ])
-  ])
+            }),
+            0
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("router-view")
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
@@ -19689,14 +19691,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-12" }, [
       _c("h1", { staticClass: "my-4 text-center" }, [_vm._v("Clothing Store")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-footer" }, [
-      _c("small", { staticClass: "text-muted" }, [_vm._v("★ ★ ★ ★ ☆")])
     ])
   }
 ]
@@ -19728,11 +19722,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("h1", [_vm._v("hello world")]),
-      _vm._v(" "),
-      _c("h1", [_vm._v("hello world")])
-    ])
+    return _c("div", [_c("h1", [_vm._v("test vue component")])])
   }
 ]
 render._withStripped = true
@@ -35196,7 +35186,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/product',
     component: _components_SingleProduct__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }]
+  }],
+  mode: 'history'
 }));
 
 /***/ }),

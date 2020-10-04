@@ -17,14 +17,12 @@
                         <router-link to="/product">Product</router-link>
                         <p class="card-text">{{ product.description }}</p>
                      </div>
-                     <div class="card-footer">
-                        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                     </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
+      <router-view></router-view>
    </div>
 </template>
 
